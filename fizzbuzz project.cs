@@ -5,26 +5,31 @@
     //Parameter
     //scope 
 //------------------------------------------------------------------------//
-public string FizzBuzz(int number)
+namespace FizzBuzz
 {
-    var answer = "";
-    //when the number is divisible by 3 return the word fizz
-    if (number % 3 == 0)
+    public class FizBuzz
     {
-      answer = "fizz";  
+        public void FizzBuzz(int number)
+        {
+            for (int i = 1; i <= until; i++)
+            {
+                if(i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("fizzbuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("fizz");
+                }
+                else if ( i % 5 == 0)
+                {
+                    Console.WriteLine("buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
     }
-
-//when the number is divisible by 5 return the word buzz
- if(number % 5 == 0)
-    {
-        answer += "buzz"; //NOTE: We can write it as answer = answer + buzz
-    }
-//when the number is divisible by both, return the word fizzbuzz 
-
-    if (number % 3 == 0 && number % 5 == 0)
-    {
-        answer = "fizzbuzz";
-
-    }
-    return answer; 
 }
