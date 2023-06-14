@@ -5,11 +5,13 @@
     //Parameter
     //scope 
 //------------------------------------------------------------------------//
-namespace FizzBuzz
+using system;
 {
+    namespace FizzBuzzDemo
+ {
     public class FizBuzz
     {
-        public void FizzBuzz(int number)
+        public static void Main(string [] args)
         {
             for (int i = 1; i <= until; i++)
             {
@@ -29,7 +31,10 @@ namespace FizzBuzz
                 {
                     Console.WriteLine(i);
                 }
+
+                return 0; 
             }
         }
     }
+  }
 }
