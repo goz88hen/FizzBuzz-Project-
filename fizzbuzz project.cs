@@ -13,7 +13,8 @@ using system;
     {
         public static void Main(string [] args)
         {
-            for (int i = 1; i <= until; i++)
+            int limit = 20;
+            for (int i = 1; i <= limit; i++)
             {
                 if(i % 3 == 0 && i % 5 == 0)
                 {
@@ -28,11 +29,10 @@ using system;
                     Console.WriteLine("buzz");
                 }
                 else
-                {
                     Console.WriteLine(i);
-                }
+                
 
-                return 0; 
+                
             }
         }
     }
